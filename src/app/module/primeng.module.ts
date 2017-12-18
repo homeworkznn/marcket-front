@@ -1,6 +1,4 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
 import { PanelMenuModule, ButtonModule, InputTextModule, TooltipModule, DropdownModule, TreeTableModule , SharedModule,
   RadioButtonModule, CalendarModule, CheckboxModule, ConfirmDialogModule, PaginatorModule, ScheduleModule,
   ProgressBarModule, InputTextareaModule, FileUploadModule, OverlayPanelModule, RatingModule, EditorModule, ChartModule,
@@ -10,7 +8,6 @@ import { PanelMenuModule, ButtonModule, InputTextModule, TooltipModule, Dropdown
 @NgModule({
   imports:      [
     EditorModule,
-    CommonModule,
     PanelMenuModule,
     ButtonModule,
     InputTextModule,
