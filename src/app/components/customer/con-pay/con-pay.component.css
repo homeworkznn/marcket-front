@@ -1,1 +1,4 @@
-
+ul{width:800px; height:70px;text-align:center;alignment:center;margin: auto}
+li{width:195px;height:68px;margin:1px auto; float:left;list-style-type:none}
+.table-a table{border-radius: 25px;border: 2px solid #000}
+.service *{display:inline-block;vertical-align:middle}
