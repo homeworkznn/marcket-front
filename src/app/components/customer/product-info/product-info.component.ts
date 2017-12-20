@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductInfoComponent implements OnInit {
 
+  pro_list = ['', '', '', ''];
   constructor() { }
 
   ngOnInit() {
