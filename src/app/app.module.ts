@@ -9,6 +9,7 @@ import {RouterModule, Routes} from "@angular/router";
 const appRoutes: Routes = [
   {path: '', redirectTo: '/customer', pathMatch: 'full'},
   {path: 'customer', loadChildren: 'app/components/customer/customer.module#CustomerModule'},
+  {path: 'manage', loadChildren: 'app/components/customer/manage.module#ManageModule'},
 ];
 
 @NgModule({
