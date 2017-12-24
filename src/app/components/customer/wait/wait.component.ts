@@ -12,4 +12,5 @@ export class WaitComponent implements OnInit {
   ngOnInit() {
   }
 
+
 }
