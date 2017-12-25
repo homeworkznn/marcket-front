@@ -3,7 +3,6 @@ import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {ProviderOverride} from '@angular/core/src/view';
 import {PrimengModule} from "../../module/primeng.module";
-import {ManagepageComponent} from './managepage/managepage.component';
 import {LoginComponent} from './managepage/login/login.component';
 import {MenuComponent} from './managepage/menu/menu.component';
 import {SettingComponent} from './managepage/setting/setting.component';
@@ -25,7 +24,7 @@ const routes: Routes = [
     PrimengModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [LoginComponent, MenuComponent, SettingComponent, OrderComponent, ProductComponent, OrderResultComponent, ProductInfoComponent, ChipInfoComponent, MatchComponent, ProInfoComponent],
+  declarations: [LoginComponent, MenuComponent, SettingComponent, OrderComponent, ProductComponent, OrderResultComponent, ChipInfoComponent, MatchComponent, ProInfoComponent],
   providers: [],
   exports: [RouterModule]
 })
