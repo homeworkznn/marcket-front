@@ -1,3 +1,45 @@
-<p>
-  chip-info works!
-</p>
+<div class="ui-g table-list">
+
+  <div class="ui-g-12" style="width: 70%">
+    <div class="ui-g-12" style="display: flex; flex-direction: row-reverse">
+      <button pTooltip="点击刷新列表以获取最新芯片信息" tooltipPosition="bottom" style="margin-left: 15px; margin-top: 5px; border-radius: 50%; border: 1px solid #b31309; width: 20px; height: 20px; padding: 2px; color: #b31309">?</button>
+      <button class="refresh-button" >刷新列表</button>
+    </div>
+    <table id="customers" class="table-position">
+      <tr>
+        <th>序号</th>
+        <th>芯片ID</th>
+        <th (click)="op1.toggle($event)" style="cursor: pointer; outline: 0">商品ID<i class="fa-caret-down fa" style="padding-left: 5px"></i></th>
+        <th>平均单价（元）</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>XXXXX</td>
+        <td>XXXXX</td>
+        <td>已支付 <span class="underli" (click)="confirm1(op2, $event)">修改</span></td>
+      </tr>
+      <tr class="alt">
+        <td>2</td>
+        <td>XXXXX</td>
+        <td><span class="underli">未匹配</span></td>
+        <td>未匹配</td>
+      </tr>
+
+    </table>
+  </div>
+</div>
+
+
+<p-overlayPanel #op1>
+  <div style="cursor: pointer">显示未匹配</div>
+  <div style="cursor: pointer">显示已下架</div>
+</p-overlayPanel>
+
+<p-overlayPanel #op2>
+  <div><p-dropdown [options]="status" [(ngModel)]="statu"></p-dropdown></div>
+  <button class="confirm">确认</button>
+  <button class="confirm">返回</button>
+</p-overlayPanel>
+
+
+<p-confirmDialog></p-confirmDialog>

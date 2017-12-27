@@ -20,6 +20,7 @@ const routes: Routes = [
   {path: 'menu', component: MenuComponent},
   {path: 'setting', component: SettingComponent}
 
+  {path: 'chipinfo', component: ChipInfoComponent},
 ];
 
 @NgModule({
