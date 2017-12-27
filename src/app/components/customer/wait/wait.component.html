@@ -5,40 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="normalize.css" />
-  <link rel="stylesheet" type="text/css" href="demo.css">
-  <link rel="stylesheet" href="app.css">
-  <link rel="stylesheet" href="assets">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel = "stylesheet" href="wait.component.css">
+
 </head>
 <body>
 
-<div class="slider">
-
-  <div class="slider-img">
-    <ul class="slider-img-ul">
-      <li><img src="../../../../assets/img/slider-5.jpg"></li>
-      <li><img src="../../../../assets/img/slider-1.jpg"></li>
-      <li><img src="../../../../assets/img/slider-2.jpg"></li>
-      <li><img src="../../../../assets/img/slider-3.jpg"></li>
-      <li><img src="../../../../assets/img/slider-4.jpg"></li>
-      <li><img src="../../../../assets/img/slider-5.jpg"></li>
-      <li><img src="../../../../assets/img/slider-1.jpg"></li>
-    </ul>
-  </div>
-
-</div>
-
-
-
+<p-galleria [images]="images" panelWidth="80%" panelHeight="313" align="center" [autoPlay]="true"></p-galleria>
 
 <div class="main">
   <button class="button red"style="text-align: center;clear:both" >开始扫描</button>
 </div>
 
-<script type="text/javascript" src="jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="../wait/xSlider.js"></script>
+
 
 </body>
 </html>

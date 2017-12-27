@@ -4,7 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { CustomerComponent } from './components/customer/customer.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {RouterModule, Routes} from "@angular/router";
+import {RouterModule, Routes} from '@angular/router';
+import {GalleriaModule} from 'primeng/primeng';
 
 const appRoutes: Routes = [
   {path: '', redirectTo: '/customer', pathMatch: 'full'},
@@ -20,7 +21,8 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot(appRoutes, {useHash: true})
+    RouterModule.forRoot(appRoutes, {useHash: true}),
+    GalleriaModule
   ],
   providers: [],
   exports: [RouterModule],

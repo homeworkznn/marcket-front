@@ -20,7 +20,7 @@ const routes: Routes = [
   imports:      [
     CommonModule,
     PrimengModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
   ],
   declarations: [
   WaitComponent,
