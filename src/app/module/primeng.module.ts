@@ -2,7 +2,7 @@ import {NgModule, OnInit} from '@angular/core';
 import { PanelMenuModule, ButtonModule, InputTextModule, TooltipModule, DropdownModule, TreeTableModule , SharedModule,
   RadioButtonModule, CalendarModule, CheckboxModule, ConfirmDialogModule, PaginatorModule, ScheduleModule,
   ProgressBarModule, InputTextareaModule, FileUploadModule, OverlayPanelModule, RatingModule, EditorModule, ChartModule,
-  MultiSelectModule, DialogModule, DataTableModule, GrowlModule, GalleriaModule } from 'primeng/primeng';
+  MultiSelectModule, DialogModule, DataTableModule, GrowlModule, GalleriaModule , ToolbarModule } from 'primeng/primeng';
 // import {EditorModule} from 'primeng/primeng';
 
 
@@ -32,6 +32,7 @@ import { PanelMenuModule, ButtonModule, InputTextModule, TooltipModule, Dropdown
     DataTableModule,
     DialogModule,
     GrowlModule,
+    ToolbarModule,
     GalleriaModule],
   declarations: [
   ],

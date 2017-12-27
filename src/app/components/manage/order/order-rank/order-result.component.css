@@ -1,0 +1,47 @@
+.table-list {
+  display: flex;
+  justify-content: space-between;
+  margin-left:370px;
+  margin-right:370px;
+  margin-top:25px;
+  margin-bottom:10px;
+
+}
+
+.box{
+  display:flex;
+  flex-wrap:wrap;
+  align-content: space-between;
+}
+
+
+.column{
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.row{
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.hr{
+  margin-left:370px;
+  margin-right:370px;
+}
+
+.span-left{
+  margin-left:370px;
+
+}
+
+.span-bottom{
+  margin-bottom: 15px;
+}
+
+.span-top{
+  margin-top:45px;
+}
