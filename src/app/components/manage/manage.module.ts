@@ -16,6 +16,7 @@ import {ProInfoComponent} from './product-manage/pro-info/pro-info.component';
 // import { FormsModule } from '@angular/forms';
 const routes: Routes = [
   {path: 'proinfo', component: ProInfoComponent},
+  {path: 'chipinfo', component: ChipInfoComponent},
 ];
 
 @NgModule({

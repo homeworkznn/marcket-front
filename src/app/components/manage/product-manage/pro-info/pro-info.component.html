@@ -1,3 +1,52 @@
-<p>
-  pro-info works!
-</p>
+<div class="ui-g table-list">
+
+  <div class="ui-g-12" style="width: 70%">
+    <div class="ui-g-12" style="display: flex; flex-direction: row-reverse">
+      <button pTooltip="点击刷新列表" tooltipPosition="bottom" style="margin-left: 15px; margin-top: 5px; border-radius: 50%; border: 1px solid #b31309; width: 20px; height: 20px; padding: 2px; color: #b31309">?</button>
+      <button class="refresh-button" >刷新列表</button>
+    </div>
+    <table id="customers" class="table-position">
+      <tr>
+        <th>序号</th>
+        <th>商品类别</th>
+        <th>商品ID</th>
+        <th>商品名</th>
+        <th>平均单价（元）</th>
+        <th style="cursor: pointer" (click)="op.toggle($event)">芯片ID<i class="fa-caret-down fa" style="padding-left: 5px"></i></th>
+      </tr>
+      <tr>
+        <td>百事可乐</td>
+        <td>XXXXX</td>
+        <td>百事可乐200ML</td>
+        <td>2.50</td>
+        <td (click)="op1.toggle($event)"> <span class="underli">图片修改/录入</span></td>
+        <td>XXXXX</td>
+      </tr>
+      <tr class="alt">
+        <td>百事可乐</td>
+        <td>XXXXX</td>
+        <td>百事可乐200ML</td>
+        <td>2.50</td>
+        <td>图片修改/录入</td>
+        <td><span class="underli">未匹配</span></td>
+      </tr>
+
+    </table>
+  </div>
+</div>
+
+
+<p-overlayPanel #op>
+  <span style="cursor: pointer">显示未匹配</span>
+</p-overlayPanel>
+
+<p-overlayPanel #op1>
+  <p-fileUpload name="demo[]" (onSelect)="onUpload($event)"
+                multiple="multiple" accept="image/*" maxFileSize="1000000">
+    <ng-template pTemplate type="content">
+      <ul *ngIf="uploadedFiles.length">
+        <li *ngFor="let file of uploadedFiles">{{file.name}} - {{file.size}} bytes</li>
+      </ul>
+    </ng-template>
+  </p-fileUpload>
+</p-overlayPanel>
