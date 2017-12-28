@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ToolbarModule} from 'primeng/primeng';
 import {Message} from 'primeng/primeng';
 
 @Component({
@@ -83,12 +84,12 @@ export class ProductComponent {
     };
   }
 
+
   selectData(event) {
     this.msgs = [];
     this.msgs.push
     ({severity: 'info', summary: 'Data Selected', 'detail': this.data.datasets[event.element._datasetIndex].data[event.element._index]});
   }
-
   selectData2(event) {
     this.msgs2 = [];
     this.msgs2.push
@@ -99,6 +100,5 @@ export class ProductComponent {
     this.msgs3 = [];
     this.msgs3.push
     ({severity: 'info', summary: 'Data Selected', 'detail': this.data3.datasets[event.element._datasetIndex].data3[event.element._index]});
-  }
 
 }
