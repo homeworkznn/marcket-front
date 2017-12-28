@@ -1,0 +1,43 @@
+.wrapper {
+  background: #98BA9F;
+  opacity: 0.8;
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: auto;
+}
+
+.box {
+  display:flex;
+  flex-wrap:nowrap;
+  flex-direction: column;
+  height: auto;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 120px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  background-color: white;
+  opacity: 0.8;
+  justify-content:center ;
+}
+
+.column {
+  display: flex;
+  margin-top: 10px;
+}
+
+.item {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.hr {
+  color: beige;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

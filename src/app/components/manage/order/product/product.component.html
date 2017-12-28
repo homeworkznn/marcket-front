@@ -1,3 +1,83 @@
-<p>
-  product works!
-</p>
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<link rel="stylesheet" type="text/css" href="product.component.css">-->
+</head>
+<body>
+<div class="wrapper">
+  <div class="box" >
+    <div class="column" >
+      <span class="item">
+        <div>商品名：百事可乐225ml</div>
+        <div>
+          <label>ID:XXXXXX&nbsp;&nbsp;&nbsp;</label>
+          <label>商品类型：百事可乐</label>
+        </div>
+        <div>价格：¥2.50</div>
+        <div>
+          <label>生产日期：2017/05/24&nbsp;&nbsp;&nbsp;</label>
+          <label>保质期：12个月</label>
+        </div>
+        <div>产地：中国上海</div>
+      </span>
+
+      <span class="item" style="align-items: flex-end">
+       <img src="../../../../assets/img/pepsicola.jpg" style="width: 50px;height:70px;margin-right: 40px">
+      </span>
+    </div>
+    <div class="hr"><hr/></div>
+    <div class="column" style="flex-direction: column">
+      <span class="item" style="align-items: center;">
+        <p-growl [value]="msgs"></p-growl>
+        <p-chart type="line" style="width: 65%;" [data]="data" [options]="options" (onDataSelect)="selectData($event)"></p-chart>
+      </span>
+    </div>
+
+    <span class="item" style="align-items: center">
+    <div style="margin-bottom: 40px;margin-top: 40px">
+      详情：4、5月因“感恩回馈季”而促销；12月年庆促销。
+    </div>
+    </span>
+
+    <div class="column">
+      <span class="item" style="align-items: center">
+        <p-growl [value]="msgs2"></p-growl>
+        <p-chart type="line" style="width: 65%;" [data]="data2" [options]="options2" (onDataSelect)="selectData2($event)"></p-chart>
+      </span>
+    </div>
+
+    <span class="item" style="align-items: center">
+    <div style="margin-bottom: 40px;margin-top: 40px">
+      详情：4、5月因“感恩回馈季”而促销；12月年庆促销。
+    </div>
+    </span>
+
+    <div class="column">
+      <span class="item" style="align-items: center">
+        <p-growl [value]="msgs3"></p-growl>
+        <p-chart type="line" style="width: 65%;" [data]="data3" [options]="options3" (onDataSelect)="selectData3($event)"></p-chart>
+      </span>
+    </div>
+
+    <span class="item" style="align-items: center">
+    <div style="margin-bottom: 40px;margin-top: 40px">
+      详情：4、5月因“感恩回馈季”而促销；12月年庆促销。
+    </div>
+    </span>
+
+  </div>
+</div>
+
+
+
+</body>
+</html>
+
+
+
+
+

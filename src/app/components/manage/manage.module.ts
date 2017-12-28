@@ -18,9 +18,9 @@ const routes: Routes = [
   {path: 'proinfo', component: ProInfoComponent},
   {path: 'login', component: LoginComponent},
   {path: 'menu', component: MenuComponent},
-  {path: 'setting', component: SettingComponent}
-
+  {path: 'setting', component: SettingComponent},
   {path: 'chipinfo', component: ChipInfoComponent},
+  {path: 'product', component: ProductComponent},
 ];
 
 @NgModule({
