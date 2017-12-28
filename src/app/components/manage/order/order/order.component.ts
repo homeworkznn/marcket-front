@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {ToolbarModule} from 'primeng/primeng';
 
 @Component({
   selector: 'app-order',

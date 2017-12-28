@@ -6,12 +6,12 @@ import {PrimengModule} from "../../module/primeng.module";
 import {LoginComponent} from './managepage/login/login.component';
 import {MenuComponent} from './managepage/menu/menu.component';
 import {SettingComponent} from './managepage/setting/setting.component';
-import {OrderComponent} from './order/order-result/order.component';
 import {ProductComponent} from './order/product/product.component';
-import {OrderResultComponent} from './order/order-rank/order-result.component';
+import {OrderResultComponent} from './order/order-result/order-result.component';
 import {ChipInfoComponent} from './product-manage/chip-info/chip-info.component';
 import {MatchComponent} from './product-manage/match/match.component';
 import {ProInfoComponent} from './product-manage/pro-info/pro-info.component';
+import {OrderComponent} from "./order/order/order.component";
 
 // import { FormsModule } from '@angular/forms';
 const routes: Routes = [
@@ -21,6 +21,7 @@ const routes: Routes = [
   {path: 'setting', component: SettingComponent},
   {path: 'chipinfo', component: ChipInfoComponent},
   {path: 'product', component: ProductComponent},
+  {path: 'order-result', component: OrderResultComponent}
 ];
 
 @NgModule({
