@@ -1,0 +1,96 @@
+.refresh-button {
+  outline: 0;
+  width: 147px;
+  height: 30px;
+  left: 755px;
+  top: 164px;
+  color: #ffffff;
+  background-color: #578556;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  font-size: 14.0px;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+  text-align: center;
+  font-weight: normal;
+  font-style: normal;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  opacity: 1;
+  pointer-events: auto
+}
+
+.pipei {
+  width: 190px;
+  height: 40px;
+  left: 625px;
+  top: 420px;
+  color: #578556;
+  background-color: #ffffff;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  font-size: 14.0px;
+  border-radius: 9px;
+  border-width: 1px;
+  border-style: solid;
+  text-align: center;
+  font-weight: normal;
+  font-style: normal;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  opacity: 1;
+  pointer-events: auto
+}
+
+
+/* 弹窗 (background) */
+.modal {
+  display: none; /* 默认隐藏 */
+  position: fixed !important;
+  z-index: 1;
+  padding-top: 80px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* 弹窗内容 */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 100px auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 0;
+  border: 1px solid #888;
+  width: 380px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+
+.modal-header {
+  /*background: linear-gradient(to right, rgba(29, 184, 167, 0.7), rgba(22, 138, 183, 0.7));*/
+  padding: 15px 25px;
+  color: #4c596b;
+  font-size: 14px;
+}
+
+.modal-body {
+  padding: 15px 25px;
+}
+
+.modal-footer {
+  padding: 20px 25px;
+  text-align: center;
+}

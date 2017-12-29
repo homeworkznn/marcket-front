@@ -11,7 +11,7 @@
 
 #customers td, #customers th {
   font-size: 1em;
-  border: 1px solid #b31309;
+  border: 1px solid #578556;
   padding: 3px 7px 2px 7px;
 }
 
@@ -20,7 +20,7 @@
   text-align: left;
   padding-top: 5px;
   padding-bottom: 4px;
-  background-color: rgba(220,19,9, 0.5);
+  background-color: #375556;
   color: #ffffff;
 }
 
@@ -36,7 +36,7 @@
   left: 755px;
   top: 164px;
   color: #ffffff;
-  background-color: #b31309;
+  background-color: #578556;
   transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
   font-size: 14.0px;
@@ -54,13 +54,13 @@
 }
 
 .underli {
-  color: #b31309;
+  color: #578556;
   cursor: pointer;
   outline: 0;
   text-decoration: underline
 }
 
 * >>> .ui-widget-header .ui-button, .ui-widget-content .ui-button, .ui-widget.ui-button, .ui-button{
-  border: 1px solid #b31309;
-  background-color: #b31309;
+  border: 1px solid #578556;
+  background-color: #578556;
 }
