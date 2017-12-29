@@ -21,7 +21,8 @@ const routes: Routes = [
   {path: 'setting', component: SettingComponent},
   {path: 'chipinfo', component: ChipInfoComponent},
   {path: 'product', component: ProductComponent},
-  {path: 'order-result', component: OrderResultComponent}
+  {path: 'order-result', component: OrderResultComponent},
+  {path: 'match', component: MatchComponent}
 ];
 
 @NgModule({

@@ -35,8 +35,8 @@
   height: 30px;
   left: 755px;
   top: 164px;
-  color: #ffffff;
-  background-color: #b31309;
+  color: #578556;
+  background-color: #fff;
   transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
   font-size: 14.0px;
@@ -54,19 +54,19 @@
 }
 
 .underli {
-  color: #b31309;
+  color: #578556;
   cursor: pointer;
   outline: 0;
   text-decoration: underline
 }
 
 * >>> .ui-widget-content .ui-button, .ui-widget.ui-button, .ui-button{
-  border: 1px solid #b31309 !important;
-  background-color: #b31309 !important;
+  border: 1px solid #578556 !important;
+  background-color: #578556 !important;
 }
 * >>> .ui-widget-content .ui-button, .ui-widget.ui-button, .ui-button {
-  border: 1px solid #b31309;
-  background-color: #b31309;
+  border: 1px solid #578556;
+  background-color: #578556;
 }
 
 .confirm {
@@ -75,7 +75,7 @@
   left: 642px;
   top: 429px;
   color: #ffffff;
-  background-color: #b31309;
+  background-color: #578556;
   transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
   font-size: 14.0px;
