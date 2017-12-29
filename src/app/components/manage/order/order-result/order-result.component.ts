@@ -11,5 +11,5 @@ export class OrderResultComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }
+
