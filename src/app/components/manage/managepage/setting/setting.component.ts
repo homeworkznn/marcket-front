@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-setting',
   templateUrl: './setting.component.html',
@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SettingComponent implements OnInit {
 
-  constructor() {}
+  constructor(private router:Router) {}
 
   ngOnInit() {
+  }
+
+  gotomenu():void{
+    this.router.navigate(['/manage/menu']);
   }
 
 }

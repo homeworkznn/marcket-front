@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>菜单</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<link rel="stylesheet" type="text/css" href="menu.component.css">-->
+</head>
+<body>
+<div class="wrapper">
+  <table style="padding-left:200px;padding-top: 70px;padding-bottom: 10px">
+    <tr>
+      <td><img src="../../../../assets/img/return.png"  onclick="javascript:history.back()" width="20px" height="20px"/></td>
+      <td><label style="color: #4e5052;line-height:20px"  onclick="javascript:history.back()">返回上一页</label></td>
+      <td><label style="line-height: 20px">/商品管理</label></td>
+    </tr>
+  </table>
+
+
+  <div align="center">
+    <div class="button" (click)="gotoorderresult()" >
+      <span class="text">商品信息管理</span>
+    </div>
+  </div>
+
+  <div align="center">
+    <div class="button" >
+      <span class="text">芯片信息管理</span>
+    </div>
+  </div>
+
+  <div align="center">
+    <div class="button" >
+      <span class="text">匹配处理</span>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
+
+

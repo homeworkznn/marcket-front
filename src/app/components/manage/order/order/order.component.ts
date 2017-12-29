@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-order',
   templateUrl: './order.component.html',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) {}
 
   ngOnInit() {
   }
 
+  gotomenu():void{
+    this.router.navigate(['/manage/menu']);
+  }
+
+  gotoresult():void{
+    this.router.navigate(['/manage/order-result']);
+  }
 }

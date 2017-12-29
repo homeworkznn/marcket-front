@@ -12,6 +12,7 @@ import {ChipInfoComponent} from './product-manage/chip-info/chip-info.component'
 import {MatchComponent} from './product-manage/match/match.component';
 import {ProInfoComponent} from './product-manage/pro-info/pro-info.component';
 import {OrderComponent} from "./order/order/order.component";
+import { ProMenuComponent } from './product-manage/pro-menu/pro-menu.component';
 
 // import { FormsModule } from '@angular/forms';
 const routes: Routes = [
@@ -22,8 +23,10 @@ const routes: Routes = [
   {path: 'chipinfo', component: ChipInfoComponent},
   {path: 'product', component: ProductComponent},
   {path: 'order-result', component: OrderResultComponent},
-  {path: 'match', component: MatchComponent}
-  {path: 'order', component: OrderComponent}
+  {path: 'match', component: MatchComponent},
+  {path: 'order', component: OrderComponent},
+  {path: 'promenu', component: ProMenuComponent}
+
 ];
 
 @NgModule({
@@ -32,7 +35,7 @@ const routes: Routes = [
     PrimengModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [LoginComponent, MenuComponent, SettingComponent, OrderComponent, ProductComponent, OrderResultComponent, ChipInfoComponent, MatchComponent, ProInfoComponent],
+  declarations: [LoginComponent, MenuComponent, SettingComponent, OrderComponent, ProductComponent, OrderResultComponent, ChipInfoComponent, MatchComponent, ProInfoComponent, ProMenuComponent],
   providers: [],
   exports: [RouterModule]
 })

@@ -19,13 +19,13 @@
       </div>
       <div class="ui-g-4 ui-g">
         <div class="ui-g-12 text-style delete-padding">
-          ￥19.9
+          ￥19.90
         </div>
         <div class="ui-g-12 text-style delete-padding">
           数量：1
         </div>
         <div class="ui-g-12 text-style delete-padding">
-          合计：19.9
+          合计：19.90
         </div>
       </div>
     </div>
@@ -33,16 +33,18 @@
     <div class="ui-g-12" style="display: flex; justify-content: space-between">
       <div class="widget button vmiddle clickable scan-left" id="widgetw64BB64FB101513147529741p"
            data-cid="w64BB64FB101513147529741" data-link_cid="l7BB68566591513147689687">
-        <div class="button-wrapper">
 
+        <div class="button-wrapper" type="button" (click)="gotowait()">
+          <!--<a [routerLink]="['/customer/wait']" ></a>-->
           <span class="text">重新扫描</span>
         </div>
         <div class="region gesture " style="display: none;"></div>
+
       </div>
 
       <div class="widget button vmiddle clickable scan-right" id="widgetwFE154920361513147535536p"
            data-cid="wFE154920361513147535536" data-link_cid="lE1C7AE0EB41513149038892">
-        <div class="button-wrapper">
+        <div class="button-wrapper" (click)="gotoconpay()">
 
           <span class="text">确认支付</span>
         </div>

@@ -15,7 +15,7 @@ export class ChipInfoComponent implements OnInit {
   status = [
     {label: '已修改', value: '1'},
     {label: '未修改', value: '0'}
-  ];
+  ]
 
   constructor(private confirmationService: ConfirmationService) {
 
@@ -26,17 +26,7 @@ export class ChipInfoComponent implements OnInit {
 
   }
 
-  confirm1(op, event) {
-    this.confirmationService.confirm({
-      message: '若进行修改，请确保在修改之前已经对商品做出相应处理，以免信息混乱',
-      header: '确认修改',
-      icon: 'fa fa-question-circle',
-      accept: () => {
-        op.toggle(event);
-      },
-      reject: () => {
-      }
-    });
-  }
+
+
 
 }

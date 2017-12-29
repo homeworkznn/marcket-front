@@ -33,17 +33,17 @@
   <li>支付方式</li>
 </ul>
 <ul>
-  <li><img src="../../../../assets/img/weixin.png" width="100px"></li>
-  <li><img src="../../../../assets/img/zhifubao.png" width="100px"></li>
-  <li><img src="../../../../assets/img/yinlian.png" width="100px"></li>
-  <li><img src="../../../../assets/img/cash.png" width="100px"></li>
+  <li><img src="../../../../assets/img/weixin.png" width="100px" (click)="gotopayfinish()"></li>
+  <li><img src="../../../../assets/img/zhifubao.png" width="100px" (click)="gotopayfinish()"></li>
+  <li><img src="../../../../assets/img/yinlian.png" width="100px" (click)="gotopayfinish()"></li>
+  <li><img src="../../../../assets/img/cash.png" width="100px" (click)="gotopayfinish()"></li>
 </ul>
 <br/><br/>
 <ul>
-  <li style="text-align: center">微信支付</li>
-  <li style="text-align: center">支付宝支付</li>
-  <li style="text-align: center">银行卡支付</li>
-  <li style="text-align: center">现金支付</li>
+  <li (click)="gotopayfinish()" style="text-align: center">微信支付</li>
+  <li (click)="gotopayfinish()" style="text-align: center">支付宝支付</li>
+  <li (click)="gotopayfinish()" style="text-align: center">银行卡支付</li>
+  <li (click)="gotopayfinish()" style="text-align: center">现金支付</li>
 </ul>
 
 <br/>

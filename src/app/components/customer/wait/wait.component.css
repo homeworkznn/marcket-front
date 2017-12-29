@@ -30,7 +30,7 @@
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  font: 14px/100% Arial, Helvetica, sans-serif;
+  font: 16px/100% Arial, Helvetica, sans-serif;
   padding: .5em 2em .55em;
   text-shadow: 0 1px 1px rgba(0,0,0,.3);
   -webkit-border-radius: .5em;
@@ -39,6 +39,9 @@
   -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
   -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
   box-shadow: 0 1px 2px rgba(0,0,0,.2);
+
+  border: 1px solid #b31309;
+  border-radius: 3;
 }
 .button:hover {
   text-decoration: none;
