@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: 'wait', component: WaitComponent},
   { path: 'pay-finish', component: PayFinishComponent},
   { path: 'con-pay', component: ConPayComponent},
-  { path: 'proinfo', component: ProductInfoComponent},
+  { path: 'pro-info', component: ProductInfoComponent},
 ];
 
 @NgModule({

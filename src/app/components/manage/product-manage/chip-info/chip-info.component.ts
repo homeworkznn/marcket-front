@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Message, ConfirmationService, SelectItem} from "primeng/primeng";
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-chip-info',
@@ -17,7 +18,7 @@ export class ChipInfoComponent implements OnInit {
     {label: '未修改', value: '0'}
   ]
 
-  constructor(private confirmationService: ConfirmationService) {
+  constructor(private confirmationService: ConfirmationService, private router: Router) {
 
 
   }

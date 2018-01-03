@@ -14,8 +14,8 @@
   <div id="return" class = "table" style="padding: 100px">
   <tr>
     <td><img src="../../../../../assets/img/return.png" width="20px" height="20px"/></td>
-    <td><label style = "color:#4e5052; line-height: 20px">返回主页</label></td>
-    <td><label style = "line-height: 20px">/订单管理</label></td>
+    <td><label style = "color:#4e5052; line-height: 20px" (click)="gotomenu()">返回主页</label></td>
+    <td><label style = "line-height: 20px" (click)="gotomenu()">/订单管理</label></td>
   </tr>
 </div>
   <div class="box"  style="background-color: #f5f7f9; margin-left:250px; margin-right:250px;border:1px solid black;height: 400px; margin-bottom: 20%">
@@ -35,7 +35,7 @@
             <option value="2011">2011</option>
             <option value="2010">2010</option>
        </select></span>
-       <span class="item" style="margin-top: 45px;width: 150px">订单查询</span></div>
+       <span class="item" style="margin-top: 45px;width: 150px" (click)="gotoorder()">订单查询</span></div>
    </div>
    <div class="column" style="margin-left: 60px; margin-top: 50px; margin-right: 0">
      <table id="rankTable" style="border: black" border="1px solid black" width="600">

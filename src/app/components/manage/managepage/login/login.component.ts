@@ -8,7 +8,7 @@ import {Router} from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private router: Router ) { }
 
   ngOnInit() {
   }
@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
   //       params: new HttpParams().set('name', this.name).set('username', this.username).set('password', this.password)
   // }}
 
-  gotomenu():void{
+  gotomenu(): void {
     this.router.navigate(['/manage/menu']);
   }
 

@@ -8,26 +8,27 @@ import {Router} from '@angular/router';
 })
 export class MenuComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
-  gotologin():void{
+  gotologin(): void {
     this.router.navigate(['/manage/login']);
 }
 
-  gotosetting():void{
+  gotosetting(): void {
     this.router.navigate(['/manage/setting']);
   }
 
-  gotoorderresult():void{
-    this.router.navigate(['/manage/order-result'])
+  gotoorderresult(): void {
+    this.router.navigate(['/manage/order-result']);
   }
 
-  gotopromenu():void{
-    this.router.navigate(['/manage/promenu'])
+  gotopromenu(): void {
+    this.router.navigate(['/manage/promenu']);
   }
+
 
 
 }

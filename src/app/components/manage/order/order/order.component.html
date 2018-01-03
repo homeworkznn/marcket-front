@@ -184,8 +184,8 @@
 
   <div id="return" class = "table" style="padding-left: 250px;padding-top: 50px">
     <tr>
-      <td><img src="../../../../../assets/img/return.png" width="20px" height="20px" (click)="gotomenu"/></td>
-      <td><label style = "color:#4e5052; line-height: 20px" (click)="gotomenu">返回主页</label></td>
+      <td><img src="../../../../../assets/img/return.png" width="20px" height="20px" (click)="gotomenu()"/></td>
+      <td><label style = "color:#4e5052; line-height: 20px" (click)="gotomenu()">返回主页</label></td>
       <td><label style = "line-height: 20px">/订单管理</label></td>
     </tr>
   </div>
@@ -307,7 +307,7 @@
             </select>
             </span>
       <span style="margin-left: 15px"><input type="text" name="OrderNum" /></span>
-      <span style="margin-left: 20px; line-height: 15px"><a href="#" class="button green" type=" button" (click)="gotoresult">查询</a> </span>
+      <span style="margin-left: 20px; line-height: 15px"><a href="#" class="button green" type=" button" (click)="gotoresult()">查询</a> </span>
     </div>
     </span>
 

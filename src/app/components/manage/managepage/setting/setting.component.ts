@@ -7,12 +7,12 @@ import {Router} from '@angular/router';
 })
 export class SettingComponent implements OnInit {
 
-  constructor(private router:Router) {}
+  constructor(private router: Router ) {}
 
   ngOnInit() {
   }
 
-  gotomenu():void{
+  gotomenu(): void {
     this.router.navigate(['/manage/menu']);
   }
 
