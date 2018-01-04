@@ -14,11 +14,11 @@
     <div class="container">
       <h1>超市优化结账流程系统</h1>
 
-      <form class="form">
-        <input type="text" placeholder="手机号">
-        <input type="password" placeholder="密码">
-        <button type="submit" id="login-button" (click)="gotomenu()">登录</button>
-      </form>
+      <div class="form">
+        <input type="text" placeholder="手机号" [(ngModel)]="tel">
+        <input type="password" placeholder="密码" [(ngModel)]="password">
+        <button type="submit" id="login-button" (click)="login()">登录</button>
+      </div>
     </div>
 
     <ul class="bg-bubbles">

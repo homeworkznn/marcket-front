@@ -10,6 +10,7 @@ import {PrimengModule} from "../../module/primeng.module";
 
 // import { FormsModule } from '@angular/forms';
 const routes: Routes = [
+  { path: '', redirectTo: 'wait', pathMatch: 'full'},
   { path: 'wait', component: WaitComponent},
   { path: 'pay-finish', component: PayFinishComponent},
   { path: 'con-pay', component: ConPayComponent},

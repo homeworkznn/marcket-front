@@ -7,6 +7,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {RouterModule, Routes} from '@angular/router';
 import {GalleriaModule} from 'primeng/primeng';
 
+import {HttpClientModule} from '@angular/common/http';
 const appRoutes: Routes = [
   {path: '', redirectTo: '/customer', pathMatch: 'full'},
   {path: 'customer', loadChildren: 'app/components/customer/customer.module#CustomerModule'},
@@ -21,6 +22,7 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     RouterModule.forRoot(appRoutes, {useHash: true}),
     GalleriaModule
   ],
