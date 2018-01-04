@@ -12,16 +12,9 @@ export class ProMenuComponent implements OnInit {
   ngOnInit() {
   }
 
-  gotologin(): void{
-    this.router.navigate(['/manage/login']);
-  }
 
-  gotosetting(): void{
-    this.router.navigate(['/manage/setting']);
-  }
-
-  gotoorderresult(): void{
-    this.router.navigate(['/manage/order-result']);
+  gotoproinfo(): void {
+    this.router.navigate(['/manage/proinfo']);
   }
 
   gotochipinfo(): void {

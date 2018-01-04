@@ -22,6 +22,6 @@ export class WaitComponent implements OnInit {
   }
 
   gotoproinfo(): void {
-    this.router.navigate(['/customer/proinfo']);
+    this.router.navigate(['/customer/pro-info']);
   }
 }

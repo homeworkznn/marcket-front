@@ -19,7 +19,7 @@ export class ProInfoComponent implements OnInit {
 
   }
   onUpload(event) {
-    for(let file of event.files) {
+    for (let file of event.files) {
       this.uploadedFiles.push(file);
     }
 
