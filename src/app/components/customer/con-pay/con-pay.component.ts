@@ -17,4 +17,8 @@ export class ConPayComponent implements OnInit {
     this.router.navigate(['/customer/pay-finish']);
   }
 
+  gotoproinfo(): void {
+    this.router.navigate(['/customer/pro-info']);
+  }
+
 }

@@ -21,8 +21,8 @@ export class MenuComponent implements OnInit {
     this.router.navigate(['/manage/setting']);
   }
 
-  gotoorderresult(): void {
-    this.router.navigate(['/manage/order-result']);
+  gotoorder(): void {
+    this.router.navigate(['/manage/order']);
   }
 
   gotopromenu(): void {

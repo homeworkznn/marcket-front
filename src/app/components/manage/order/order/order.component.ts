@@ -16,11 +16,9 @@ export class OrderComponent implements OnInit {
     this.router.navigate(['/manage/menu']);
   }
 
-  gotoresult(): void {
-    this.router.navigate(['/manage/order-result']);
+  gotoinquiry(): void {
+    this.router.navigate(['/manage/order-inquiry']);
   }
 
-  gotoorder(): void {
-    this.router.navigate(['/manage/order']);
-  }
+
 }
