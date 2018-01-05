@@ -5,6 +5,7 @@ import { PanelMenuModule, ButtonModule, InputTextModule, TooltipModule, Dropdown
   MultiSelectModule, DialogModule, DataTableModule, GrowlModule, GalleriaModule , ToolbarModule } from 'primeng/primeng';
 // import {EditorModule} from 'primeng/primeng';
 
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports:      [
@@ -33,11 +34,13 @@ import { PanelMenuModule, ButtonModule, InputTextModule, TooltipModule, Dropdown
     DialogModule,
     GrowlModule,
     ToolbarModule,
+    FormsModule,
     GalleriaModule],
   declarations: [
   ],
   exports: [
     EditorModule,
+    FormsModule,
     GalleriaModule,
     PanelMenuModule,
     ButtonModule,

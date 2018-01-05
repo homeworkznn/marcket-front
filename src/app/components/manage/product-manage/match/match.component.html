@@ -3,60 +3,72 @@
     <div class="ui-g-12" style="text-align: right; margin: 0 auto">
       <button class="refresh-button">查看已绑定商品</button>
     </div>
-    <div class="ui-g-3">
-      当前芯片
-    </div>
-    <div class="ui-g-9" style="text-align: left">
-      <p-dropdown [options]="chip_list" [(ngModel)]="current_chips"></p-dropdown>
-    </div>
     <div class="ui-g-12 delete-padding ui-g" style="position: relative">
-      <div class="ui-g-3">
+      <div class="ui-g-3" style="text-align: right; line-height: 30px;">
         当前商品
       </div>
       <div class="ui-g-9" style="text-align: left">
 
-        <p-dropdown [options]="chip_list1" [(ngModel)]="classs"></p-dropdown>
+        <p-dropdown [options]="chip_list1" [(ngModel)]="classs" (onChange)="getGoodsTypeList()"></p-dropdown>
         <span>类</span>
-        <span>ID</span>
-        <p-dropdown [options]="chip_list2" [(ngModel)]="id"></p-dropdown>
+        <span style="margin-left: 40px">ID</span>
+        <p-dropdown [options]="chip_list2" [(ngModel)]="id" [placeholder]="'请选择id'" (onChange)="selectChipId(id)"></p-dropdown>
       </div>
       <div class="ui-g-3"></div>
       <div class="ui-g-9" style="text-align: left">
-        <p-dropdown [options]="chip_list3" [(ngModel)]="product"></p-dropdown>
-
+        <p-dropdown [options]="chip_list3" [(ngModel)]="product" [placeholder]="'请选择商品'" (onChange)="selectProduct(product)"></p-dropdown>
+        <span style="line-height: 30px">商品</span>
+        <span style="margin-left: 40px; line-height: 30px">数量: </span>
+        <input pInputText class="num-input" [(ngModel)]="num" >
+      </div>
+      <div class="ui-g-3" style="text-align: right; line-height: 30px;">
+        当前芯片起始ID
+      </div>
+      <div class="ui-g-9" style="text-align: left">
+        <div style="border: 1px solid #e2e2e6; width: 300px; height: 30px; line-height: 30px; padding-left: 10px; border-radius: 4px">
+          46576789315667
+        </div>
+      </div>
+      <div class="ui-g-3" style="text-align: right; line-height: 30px;">
+        芯片结束ID
+      </div>
+      <div class="ui-g-9" style="text-align: left">
+        <div style="border: 1px solid #e2e2e6; width: 300px; height: 30px; line-height: 30px; padding-left: 10px; border-radius: 4px">
+          46576789315690
+        </div>
       </div>
       <div class="ui-g-12" style="text-align: center">
-        <button class="pipei">进行匹配</button>
+        <button class="pipei" (click)="confirm()">进行匹配</button>
       </div>
-      <div style="position: absolute; bottom: 0; right: 0">
+      <div style="position: absolute; top: 10px; right: 10px">
         <img src="../../../../../assets/img/cash.png" style="width: 40px; height: 40px">
       </div>
     </div>
   </div>
 
 
-  <div *ngIf="false" class="ui-g" style="text-align: center; width: 70%; margin: 0 auto; position: relative">
-    <div class="ui-g-3"></div>
-    <div class="ui-g-9 ui-g" style="text-align: left">
-      <div class="ui-g-12" >
-        <p-dropdown [options]="chip_list1" [(ngModel)]="className"></p-dropdown>
-        <span>类</span>
-      </div>
-      <div class="ui-g-12">
-        <p-dropdown [options]="chip_list3" [(ngModel)]="product"></p-dropdown>
-        <span>商品</span>
-      </div>
+  <!--<div *ngIf="false" class="ui-g" style="text-align: center; width: 70%; margin: 0 auto; position: relative">-->
+    <!--<div class="ui-g-3"></div>-->
+    <!--<div class="ui-g-9 ui-g" style="text-align: left">-->
+      <!--<div class="ui-g-12" >-->
+        <!--<p-dropdown [options]="chip_list1" [(ngModel)]="className"></p-dropdown>-->
+        <!--<span>类</span>-->
+      <!--</div>-->
+      <!--<div class="ui-g-12">-->
+        <!--<p-dropdown [options]="chip_list3" [(ngModel)]="product"></p-dropdown>-->
+        <!--<span>商品</span>-->
+      <!--</div>-->
 
-      <div style="height: 0; border-bottom: 1px solid #4e5052; width: 100%"></div>
-    </div>
-    <div style="position: absolute; bottom: 5px; right: 0">
-      <img src="../../../../../assets/img/cash.png" style="width: 40px; height: 40px">
-    </div>
-  </div>
+      <!--<div style="height: 0; border-bottom: 1px solid #4e5052; width: 100%"></div>-->
+    <!--</div>-->
+    <!--<div style="position: absolute; bottom: 5px; right: 0">-->
+      <!--<img src="../../../../../assets/img/cash.png" style="width: 40px; height: 40px">-->
+    <!--</div>-->
+  <!--</div>-->
 
-  <div class="ui-g-12">
-    <p-dropdown [options]="chip_list4" [(ngModel)]="type"></p-dropdown>
-  </div>
+  <!--<div class="ui-g-12">-->
+    <!--<p-dropdown [options]="chip_list4" [(ngModel)]="type"></p-dropdown>-->
+  <!--</div>-->
 </div>
 
 <div id="myModal" class="modal" style="display: table" *ngIf="display">
@@ -67,11 +79,13 @@
          (click)="closeModal()"></i>
     </div>
     <div class="modal-body">
-        您正在将XXX与XXX进行匹配
+        您正在将<br />
+      芯片XXX至XXX<br />
+      进行匹配
     </div>
     <div class="modal-footer" style="padding-top: 0">
       <button class="refresh-button" style="width: 90px">确认</button>
-      <button class="refresh-button" style="width: 90px">取消</button>
+      <button class="refresh-button" style="width: 90px" (click)="display = false">取消</button>
     </div>
   </div>
 </div>

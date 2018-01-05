@@ -17,6 +17,7 @@ import { OrderInquiryComponent } from './order/order-inquiry/order-inquiry.compo
 
 // import { FormsModule } from '@angular/forms';
 const routes: Routes = [
+  { path: '', redirectTo: 'login', pathMatch: 'full'},
   {path: 'proinfo', component: ProInfoComponent},
   {path: 'login', component: LoginComponent},
   {path: 'menu', component: MenuComponent},
