@@ -24,6 +24,10 @@ export class ProMenuComponent implements OnInit {
   gotomatch(): void {
     this.router.navigate(['/manage/match']);
   }
+
+  gotomenu(): void {
+    this.router.navigate(['/manage/menu']);
+  }
 }
 
 

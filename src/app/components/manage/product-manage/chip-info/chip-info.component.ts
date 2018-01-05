@@ -16,7 +16,7 @@ export class ChipInfoComponent implements OnInit {
   status = [
     {label: '已修改', value: '1'},
     {label: '未修改', value: '0'}
-  ]
+  ];
 
   constructor(private confirmationService: ConfirmationService, private router: Router) {
 
@@ -27,6 +27,9 @@ export class ChipInfoComponent implements OnInit {
 
   }
 
+  gotomenu(): void {
+    this.router.navigate(['/manage/promenu']);
+  }
 
 
 

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Message} from "primeng/primeng";
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-pro-info',
@@ -13,7 +14,7 @@ export class ProInfoComponent implements OnInit {
   uploadedFiles: any[] = [];
 
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
 
@@ -25,6 +26,10 @@ export class ProInfoComponent implements OnInit {
 
     this.msgs = [];
     this.msgs.push({severity: 'info', summary: 'File Uploaded', detail: ''});
+  }
+
+  gotomenu(): void {
+    this.router.navigate(['/manage/promenu']);
   }
 
 }

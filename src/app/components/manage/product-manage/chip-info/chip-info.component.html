@@ -1,8 +1,16 @@
+<div id="return" class = "table" style="padding-left: 200px;padding-top: 50px">
+  <tr>
+    <td><img src="../../../../../assets/img/return.png" style="cursor: pointer" width="20px" height="20px" (click)="gotomenu()"/></td>
+    <td><label style = "color:#4e5052; line-height: 20px;cursor: pointer" (click)="gotomenu()">返回上一页</label></td>
+    <td><label style = "line-height: 20px">/订单管理</label></td>
+  </tr>
+</div>
+
 <div class="ui-g table-list">
 
   <div class="ui-g-12" style="width: 70%">
     <div class="ui-g-12" style="display: flex; flex-direction: row-reverse">
-      <button pTooltip="点击刷新列表以获取最新芯片信息" tooltipPosition="bottom" style="margin-left: 15px; margin-top: 5px; border-radius: 50%; border: 1px solid #b31309; width: 20px; height: 20px; padding: 2px; color: #b31309">?</button>
+      <button pTooltip="点击刷新列表以获取最新芯片信息" tooltipPosition="bottom" style="margin-left: 15px; margin-top: 5px; border-radius: 50%; border: 1px solid #578556; width: 20px; height: 20px; padding: 2px; color: #578556">?</button>
       <button class="refresh-button" >刷新列表</button>
     </div>
     <table id="customers" class="table-position">
@@ -10,17 +18,125 @@
         <th>序号</th>
         <th>芯片ID</th>
         <th (click)="op1.toggle($event)" style="cursor: pointer; outline: 0">商品ID<i class="fa-caret-down fa" style="padding-left: 5px"></i></th>
-        <th>平均单价（元）</th>
+        <th>芯片状态</th>
       </tr>
       <tr>
         <td>1</td>
-        <td>XXXXX</td>
-        <td>XXXXX</td>
+        <td>A1536789</td>
+        <td>15345678</td>
         <td>已支付 <span class="underli" (click)="confirm1(op2, $event)">修改</span></td>
       </tr>
       <tr class="alt">
         <td>2</td>
-        <td>XXXXX</td>
+        <td>A1456790</td>
+        <td><span class="underli">未匹配</span></td>
+        <td>未匹配</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>A1536791</td>
+        <td>15345678</td>
+        <td>已支付 <span class="underli" (click)="confirm1(op2, $event)">修改</span></td>
+      </tr>
+      <tr class="alt">
+        <td>4</td>
+        <td>A1536792</td>
+        <td><span class="underli">未匹配</span></td>
+        <td>未匹配</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>A1536793</td>
+        <td>15345678</td>
+        <td>已支付 <span class="underli" (click)="confirm1(op2, $event)">修改</span></td>
+      </tr>
+      <tr class="alt">
+        <td>6</td>
+        <td>A1536794</td>
+        <td><span class="underli">未匹配</span></td>
+        <td>未匹配</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>A1536795</td>
+        <td>15345678</td>
+        <td>已支付 <span class="underli" (click)="confirm1(op2, $event)">修改</span></td>
+      </tr>
+      <tr class="alt">
+        <td>8</td>
+        <td>A1536796</td>
+        <td><span class="underli">未匹配</span></td>
+        <td>未匹配</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>A1536797</td>
+        <td>15345678</td>
+        <td>已支付 <span class="underli" (click)="confirm1(op2, $event)">修改</span></td>
+      </tr>
+      <tr class="alt">
+        <td>10</td>
+        <td>A1536798</td>
+        <td><span class="underli">未匹配</span></td>
+        <td>未匹配</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>A1536799</td>
+        <td>15345678</td>
+        <td>已支付 <span class="underli" (click)="confirm1(op2, $event)">修改</span></td>
+      </tr>
+      <tr class="alt">
+        <td>12</td>
+        <td>A1536800</td>
+        <td><span class="underli">未匹配</span></td>
+        <td>未匹配</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>A1536801</td>
+        <td>15345678</td>
+        <td>已支付 <span class="underli" (click)="confirm1(op2, $event)">修改</span></td>
+      </tr>
+      <tr class="alt">
+        <td>14</td>
+        <td>A1536802</td>
+        <td><span class="underli">未匹配</span></td>
+        <td>未匹配</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>A1536803</td>
+        <td>15345678</td>
+        <td>已支付 <span class="underli" (click)="confirm1(op2, $event)">修改</span></td>
+      </tr>
+      <tr class="alt">
+        <td>16</td>
+        <td>A1536804</td>
+        <td><span class="underli">未匹配</span></td>
+        <td>未匹配</td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>A1536805</td>
+        <td>15345678</td>
+        <td>已支付 <span class="underli" (click)="confirm1(op2, $event)">修改</span></td>
+      </tr>
+      <tr class="alt">
+        <td>18</td>
+        <td>A1536806</td>
+        <td><span class="underli">未匹配</span></td>
+        <td>未匹配</td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>A1536807</td>
+        <td>15345678</td>
+        <td>已支付 <span class="underli" (click)="confirm1(op2, $event)">修改</span></td>
+      </tr>
+      <tr class="alt">
+        <td>20</td>
+        <td>A1536808</td>
         <td><span class="underli">未匹配</span></td>
         <td>未匹配</td>
       </tr>
@@ -28,7 +144,6 @@
     </table>
   </div>
 </div>
-
 
 <p-overlayPanel #op1>
   <div style="cursor: pointer">显示未匹配</div>

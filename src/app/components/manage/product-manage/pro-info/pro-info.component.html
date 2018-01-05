@@ -1,9 +1,17 @@
 
+<div id="return" class = "table" style="padding-left: 200px;padding-top: 50px">
+  <tr>
+    <td><img src="../../../../../assets/img/return.png" style="cursor: pointer" width="20px" height="20px" (click)="gotomenu()"/></td>
+    <td><label style = "color:#4e5052; line-height: 20px;cursor: pointer" (click)="gotomenu()">返回上一页</label></td>
+    <td><label style = "line-height: 20px">/订单管理</label></td>
+  </tr>
+</div>
+
 <div class="ui-g table-list">
 
   <div class="ui-g-12" style="width: 70%">
     <div class="ui-g-12" style="display: flex; flex-direction: row-reverse">
-      <button pTooltip="点击刷新列表" tooltipPosition="bottom" style="margin-left: 15px; margin-top: 5px; border-radius: 50%; border: 1px solid #b31309; width: 20px; height: 20px; padding: 2px; color: #b31309">?</button>
+      <button pTooltip="点击刷新列表" tooltipPosition="bottom" style="margin-left: 15px; margin-top: 5px; border-radius: 50%; border: 1px solid #578556; width: 20px; height: 20px; padding: 2px; color: #578556">?</button>
       <button class="refresh-button" >刷新列表</button>
     </div>
     <table id="customers" class="table-position">
@@ -13,23 +21,162 @@
         <th>商品ID</th>
         <th>商品名</th>
         <th>平均单价（元）</th>
+        <th>图片修改/录入</th>
         <th style="cursor: pointer" (click)="op.toggle($event)">芯片ID<i class="fa-caret-down fa" style="padding-left: 5px"></i></th>
       </tr>
       <tr>
-        <td>百事可乐</td>
-        <td>XXXXX</td>
+        <td>1</td>
+        <td>饮料</td>
+        <td>15300105</td>
         <td>百事可乐200ML</td>
         <td>2.50</td>
         <td (click)="op1.toggle($event)"> <span class="underli">图片修改/录入</span></td>
-        <td>XXXXX</td>
+        <td>A1540010</td>
       </tr>
       <tr class="alt">
-        <td>百事可乐</td>
-        <td>XXXXX</td>
+        <td>2</td>
+        <td>饮料</td>
+        <td>15300106</td>
         <td>百事可乐200ML</td>
         <td>2.50</td>
-        <td>图片修改/录入</td>
+        <td (click)="op1.toggle($event)"> <span class="underli">图片修改/录入</span></td>
         <td><span class="underli">未匹配</span></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>饮料</td>
+        <td>15300107</td>
+        <td>可口可乐200ML</td>
+        <td>2.50</td>
+        <td (click)="op1.toggle($event)"> <span class="underli">图片修改/录入</span></td>
+        <td>A1540110</td>
+      </tr>
+      <tr class="alt">
+        <td>4</td>
+        <td>食品</td>
+        <td>15300208</td>
+        <td>好时巴旦木巧克力</td>
+        <td>19.90</td>
+        <td (click)="op1.toggle($event)"> <span class="underli">图片修改/录入</span></td>
+        <td><span class="underli">未匹配</span></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>食品</td>
+        <td>15300209</td>
+        <td>健达巧克力100g</td>
+        <td>5.50</td>
+        <td (click)="op1.toggle($event)"> <span class="underli">图片修改/录入</span></td>
+        <td><span class="underli">未匹配</span></td>
+      </tr>
+      <tr class="alt">
+        <td>6</td>
+        <td>食品</td>
+        <td>15300210</td>
+        <td>费列罗臻巧</td>
+        <td>25.50</td>
+        <td (click)="op1.toggle($event)"> <span class="underli">图片修改/录入</span></td>
+        <td>A1540210</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>食品</td>
+        <td>15300211</td>
+        <td>德芙巧克力盒装</td>
+        <td>25.50</td>
+        <td (click)="op1.toggle($event)"> <span class="underli">图片修改/录入</span></td>
+        <td>A1540310</td>
+      </tr>
+
+      <tr class="alt">
+        <td>8</td>
+        <td>食品</td>
+        <td>15300212</td>
+        <td>健达巧克力扭蛋</td>
+        <td>5.50</td>
+        <td (click)="op1.toggle($event)"> <span class="underli">图片修改/录入</span></td>
+        <td><span class="underli">未匹配</span></td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>饮料</td>
+        <td>15300301</td>
+        <td>康师傅茉莉清茶</td>
+        <td>2.50</td>
+        <td (click)="op1.toggle($event)"> <span class="underli">图片修改/录入</span></td>
+        <td>A1541110</td>
+      </tr>
+      <tr class="alt">
+        <td>10</td>
+        <td>饮料</td>
+        <td>15300302</td>
+        <td>康师傅茉莉蜜茶</td>
+        <td>2.50</td>
+        <td (click)="op1.toggle($event)"> <span class="underli">图片修改/录入</span></td>
+        <td>A1541210</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>饮料</td>
+        <td>15300303</td>
+        <td>康师傅乌龙茶</td>
+        <td>3.50</td>
+        <td (click)="op1.toggle($event)"> <span class="underli">图片修改/录入</span></td>
+        <td>A1541310</td>
+      </tr>
+      <tr class="alt">
+        <td>12</td>
+        <td>饮料</td>
+        <td>15300304</td>
+        <td>小茗同学红茶</td>
+        <td>3.50</td>
+        <td (click)="op1.toggle($event)"> <span class="underli">图片修改/录入</span></td>
+        <td><span class="underli">未匹配</span></td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>饮料</td>
+        <td>15300305</td>
+        <td>小茗同学绿茶</td>
+        <td>3.50</td>
+        <td (click)="op1.toggle($event)"> <span class="underli">图片修改/录入</span></td>
+        <td>A1541410</td>
+      </tr>
+      <tr class="alt">
+        <td>14</td>
+        <td>饮料</td>
+        <td>15300306</td>
+        <td>雀巢咖啡特浓</td>
+        <td>2.50</td>
+        <td (click)="op1.toggle($event)"> <span class="underli">图片修改/录入</span></td>
+        <td><span class="underli">未匹配</span></td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>饮料</td>
+        <td>15300307</td>
+        <td>雀巢咖啡香滑</td>
+        <td>2.50</td>
+        <td (click)="op1.toggle($event)"> <span class="underli">图片修改/录入</span></td>
+        <td>A1544110</td>
+      </tr>
+      <tr class="alt">
+        <td>16</td>
+        <td>饮料</td>
+        <td>15300308</td>
+        <td>阿萨姆奶茶</td>
+        <td>2.50</td>
+        <td (click)="op1.toggle($event)"> <span class="underli">图片修改/录入</span></td>
+        <td><span class="underli">未匹配</span></td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>食品</td>
+        <td>15300310</td>
+        <td>乐事薯片原味</td>
+        <td>4.50</td>
+        <td (click)="op1.toggle($event)"> <span class="underli">图片修改/录入</span></td>
+        <td>A1543110</td>
       </tr>
 
     </table>
